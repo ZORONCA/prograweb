@@ -1,0 +1,292 @@
+{% extends "base.html" %}
+{% block contenido %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <style>
+    body { 
+        background-image: url('https://st3.depositphotos.com/1800192/31869/i/600/depositphotos_318696648-stock-photo-gray-abstract-background-for-designers.jpg');
+      }   
+      h1{text-align: center;color: #191970;font-size:100px;}
+        form{text-align: center;}
+        label{font-size:larger;}
+    </style>    
+    
+    <head>
+        <h1>Productos en Stock</h1>
+    </head>
+    
+    <header class="container-fluid  position-sticky top-0" style="background-color: #F0F8FF"> <!-- color header -->
+        <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+            <li class="nav-item text-black" role="presentation">
+
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" 
+                id="pills-profile-tab" 
+                data-bs-toggle="pill" 
+                data-bs-target="#pills-profile" 
+                type="button" 
+                role="tab" 
+                aria-controls="pills-profile" 
+                aria-selected="false"
+                >Productos</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+            >Carrito</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    
+
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade "
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      >
+        1
+      </div>
+      <div
+        class="tab-pane fade show active container"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+      >
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+            <div class="col d-flex justify-content-center mb-4">
+                <!-- Tarjeta para imagen -->
+                <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray;"> <!-- color cuadrado imagen-->
+                  <h5 class="card-title pt-2 text-center text-white">Redragon </h5>
+                  <img src="//media.spdigital.cl/thumbnails/products/c7uk0qcs_d57502a4_thumbnail_512.jpg" class="card-img-top" alt="..." style="width:304px; height:300px">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Teclado Mecánico Gamer Redragon Kumara K552, Switch Outemu Red, Retroiluminación Rainbow Fija</p>
+                    <h5 class="text-white">Ahora: $ 24.990</h5>
+                    <p class="text-black"> P. Antes: <del>$ 30.990</del></p>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-primary button" style="background-color:Black;">Añadir a Carrito</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray;"> <!-- color cuadrado imagen-->
+                  <h5 class="card-title pt-2 text-center text-white"> Brother</h5>
+                  <img src="//media.spdigital.cl/thumbnails/products/z1ojhnci_50816852_thumbnail_512.jpg"  class="card-img-top" alt="..." style="width:304px; height:300px">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Impresora Láser Brother HL-L6400DW</p><br><BR>
+                    <h5 class="text-white">Ahora: <span class="precio">$ 389.990</span></h5>
+                    <p class="text-black"> P. Antes: <del>$ 456.600</del></p>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-primary button" style="background-color:Black;">Añadir a Carrito</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray ;"> <!-- color cuadrado imagen-->
+                  <h5 class="card-title pt-2 text-center text-white"> Vertagear</h5>
+                  <img src="//media.spdigital.cl/thumbnails/products/2ygukfs2_77c72e2e_thumbnail_512.jpg"class="card-img-top" alt="..." style="width:304px; height:300px">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Silla Gamer Profesional VERTAGEAR Racing Series PL6000 Gaming Chair Black Carbon</p>
+                    <h5 class="text-white">Ahora: $ 175.000</h5>
+                    <p class="text-black"> P. Antes: <del>$ 220.990</del></p>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-primary button" style="background-color:Black;">Añadir a Carrito</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray ;"> <!-- color cuadrado imagen-->
+                  <h5 class="card-title pt-2 text-center text-white"> Sony </h5>
+                  <img src="//media.spdigital.cl/thumbnails/products/gwgu3_j0_f3bae278_thumbnail_512.png" class="card-img-top" alt="..." style="width:304px; height:300px">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Consola Sony PlayStation 5, 825GB, Edición Standard, Incluye Fifa 23.</p><br>
+                    <h5 class="text-white">Ahora: $ 619.990</h5>
+                    <p class="text-black"> P. Antes: <del>$ 710.990</del></p>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-primary button" style="background-color:Black;">Añadir a Carrito</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray ;"> <!-- color cuadrado imagen-->
+              <h5 class="card-title pt-2 text-center text-white">Gigabyte </h5>
+              <img src="//media.spdigital.cl/thumbnails/products/4_gp1hn9_488f52e9_thumbnail_512.jpg" class="card-img-top" alt="..." style="width:304px; height:300px">
+              
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Placa Madre Gigabyte B550M DS3H AC, Socket AM4, M.2, RGB Fusion 2.0, microATX
+                  .</p>
+                <h5 class="text-black">Precio: <span class="precio">$ 119.990</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button" style="background-color:Black;">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray ;"> <!-- color cuadrado imagen-->
+              <h5 class="card-title pt-2 text-center text-white">Apple</h5>
+              <img src="//media.spdigital.cl/thumbnails/products/oqctfckj_f939e81e_thumbnail_512.jpg"class="card-img-top" alt="..." style="width:304px; height:300px">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Apple MacBook Air 2022, Chip M2, Ram 8GB, SSD 256GB, LED 13.6" QHD, Space Gray</p>
+                <h5 class="text-black">Precio: <span class="precio">$ 1.280.000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button" style="background-color:Black;" >Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray ;"> <!-- color cuadrado imagen-->
+              <h5 class="card-title pt-2 text-center text-white">Xbox</h5>
+              <img src="//media.spdigital.cl/thumbnails/products/_wjra1iu_4a1a5036_thumbnail_512.jpg" class="card-img-top" alt="..." style="width:304px; height:300px">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Consola Xbox Series S, 120 FPS, HDR, 512GB SSD, White</p><br>
+                <h5 class="text-black">Precio: <span class="precio">$ 323.990</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button" style="background-color:Black;" >Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray ;"> <!-- color cuadrado imagen-->
+              <h5 class="card-title pt-2 text-center text-white">Apple</h5>
+              <img src="//media.spdigital.cl/thumbnails/products/_4p8x6m7_361c1a48_thumbnail_512.jpg" class="card-img-top" alt="..." style="width:304px; height:300px">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Apple Watch SE de 44mm, Case Aluminio Medianoche, Correa Deportiva Medianoche</p>
+                <h5 class="text-black">Precio: <span class="precio">$ 353.990</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button" style="background-color:Black;">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray ;"> <!-- color cuadrado imagen-->
+              <h5 class="card-title pt-2 text-center text-white">Asus</h5>
+              <img src="//media.spdigital.cl/thumbnails/products/jxnnmoze_e0f7d31d_thumbnail_512.jpg" class="card-img-top" alt="..." style="width:304px; height:300px">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Tarjeta de Video Asus Dual GeForce RTX 3060 OC Edition, 8GB GDDR6, 128-bit, PCI-e 4.0, HDMI, DP</p>
+                <h5 class="text-black">Precio: <span class="precio">$ 549.990</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button" style="background-color:Black;">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray ;"> <!-- color cuadrado imagen-->
+              <h5 class="card-title pt-2 text-center text-white">Corsair</h5>
+              <img src="//media.spdigital.cl/thumbnails/products/icn75_cq_c5c13d11_thumbnail_512.jpg"class="card-img-top" alt="..." style="width:304px; height:300px">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Memoria RAM Corsair Vengeance RGB Pro, DDR4, 8GB, 3200Mhz, DIMM</p>
+                <h5 class="text-black">Precio: <span class="precio">$ 27.990</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button" style="background-color:Black;">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray ;"> <!-- color cuadrado imagen-->
+              <h5 class="card-title pt-2 text-center text-white">Samsung</h5>
+              <img src="//media.spdigital.cl/thumbnails/products/8f_9hmqf_f04be299_thumbnail_512.jpg"class="card-img-top" alt="..."style="width:304px; height:300px">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Tablet Samsung Galaxy Tab S8 + Keyboard Cover, 11", 256GB, WiFi, Graphite</p>
+                <h5 class="text-black">Precio: <span class="precio">$ 778.000</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button" style="background-color:Black;">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray ;"> <!-- color cuadrado imagen-->
+              <h5 class="card-title pt-2 text-center text-white">HyperX</h5>
+              <img src="//media.spdigital.cl/thumbnails/products/ab4fn3cu_e75c57b5_thumbnail_512.jpg"class="card-img-top" alt="..." style="width:304px; height:300px">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Audífonos Gamer HyperX Cloud Stinger 2, Over-Ear, Jack 3.5mm, DTS Inmersivo, Negro</p>
+                <h5 class="text-black">Precio: <span class="precio">$ 39.990</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button" style="background-color:Black;">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <div
+        class="tab-pane fade carrito"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+      >
+      <br>
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr class="text-primary">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+       
+        
+          
+        </tbody>
+      </table>
+      <br><br>
+
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal text-white">Total: 0</h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <button class="btn btn-success">COMPRAR</button>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+    
+
+  
+
+    
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"
+  ></script>
+  <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+
+</html>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block contenido %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/contacto.css'%}">
+    <!--Icon-Font-->
+    <style>
+
+
+    </style>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-form">
+        <div class="info-form">
+            <h2>Contactanos</h2>
+            <p>Para contactarnos puedes escribirnos directamente al formulario, 
+                también puedes llamar al telefono publicado más abajo, directamente al correo
+                o bien puedes visitarnos directamente en nuestra sucursal de forma presencial
+            </p>
+            <a href="#"><i class="fa fa-phone"></i> +569915784</a>
+            <a href="#"><i class="fa fa-envelope"></i> email@techbox.com</a>
+            <a href="#"><i class="fa fa-map-marked"></i> Freire 682, San Bernardo, Santiago</a>
+        </div>
+        <form action="#" autocomplete="off">
+            <h2>Cuéntanos tu mensaje</h2>
+            <input type="text" name="nombre" placeholder="Tu Nombre" class="campo">
+            <input type="emal" name="email" placeholder="Tu Email" class="campo">
+            <textarea name="mensaje" placeholder="Tu Mensaje..."></textarea>
+            <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+        </form>
+    </div>
+    <div class="miclase">
+        <h2>Mapa del lugar</h2>
+        <br>
+        <img style="width:1100px; height:500px;" src="https://blog.trescomatres.com/wp-content/uploads/2022/04/GoogleMaps.webp" alt="Mapa del lugar">
+    </div>
+</body>
+
+</html>
+{% endblock %}

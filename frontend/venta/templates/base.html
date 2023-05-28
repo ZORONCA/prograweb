@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TechBox</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS v5.2.1 -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+
+  <body >
+    <header>
+
+      <!-- segundo menu -->
+      <nav class="navbar navbar-expand navbar-light bg-light" >
+          <div class="nav navbar-nav ">
+              <div id="sideNavigation" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#">About</a>
+              <a href="#">Features</a>
+              <a href="#">Contact Us</a>
+              </div>
+              <nav class="topnav">
+                <a href="#" onclick="openNav()">
+                  <svg width="25" height="25" id="icoOpen">
+                      <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                      <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                      <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                  </svg>
+                </a>
+              </nav>
+              <br>
+            <a class="nav-item nav-link" href="{% url 'home' %}">Home</a>
+            <a class="nav-item nav-link" href="{% url 'menu' %}">Menú</a>
+            <a class="nav-item nav-link" href="{% url 'agregar' %}">Ingresar trabajador</a>
+            <a class="nav-item nav-link" href="{% url 'tabla' %}">Nomina trabajadores</a>
+            <a class="nav-item nav-link" href="{% url 'contacto' %}">Contacto</a>
+            <a class="nav-item nav-link" href="{% url 'carrito' %}">Carrito</a>
+            <a class="nav-item nav-link" href="#">Nosotros</a> 
+          </div>
+      </nav> 
+    </header>
+    
+    <div id="principal">
+      <br>
+      {% block contenido %}  
+      
+      {% endblock %}
+    </div>
+
+      <p class="mt-5 mb-3 text-muted" align="center"> Todos los derechos reservados 2023 ©</p>
+    <footer class="footer py-3 bg-light">
+      <div class="footer container-fluid">
+        <div class="row p-4 bg-dark text-white">
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <figure class="wpb_wrapper vc_figure">
+              <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="250" height="31" src="https://pcmaniapr.yolasite.com/resources/logo%20solo.jpg.opt860x270o0%2C0s860x270.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy"></div>
+            </figure>
+            <div class="address">
+              <ul>
+              <li>Dirección: Freire 862, San Bernardo, Santiago de Chile.</li>
+              <li>Fono: <a href="tel:+569 3 000 46 18">+569 8 000 46 18</a></li>
+              <li>Email: &nbsp;<a href="mailto:web@innovamak.cl">web@PCMania.cl</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h5 mb-3" style="color: red;">Productos</p>
+            <div class="mb-2">  
+              <a class="text-white text-decoration-none" href="#">Top ventas</a>
+            </div>
+            <div class="mb-2">  
+              <a class="text-white text-decoration-none" href="#">Promociones</a>
+            </div>
+            <div class="mb-2">  
+              <a class="text-white text-decoration-none" href="#">Más vendidos</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h5 mb-3" style="color: red;">Cuenta</p>
+            <div class="mb-2">  
+              <a class="text-white text-decoration-none" href="#">Mi cuenta</a>
+            </div>
+            <div class="mb-2">  
+              <a class="text-white text-decoration-none" href="#">Checkout</a>
+            </div>
+            <div class="mb-2">  
+              <a class="text-white text-decoration-none" href="#">Mis compras</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h5 mb-3" style="color: red;">Más información</p>
+            <div class="mb-2">  
+              <a class="text-white text-decoration-none" href="#">Nosotros</a>
+            </div>
+            <div class="mb-2">  
+              <a class="text-white text-decoration-none" href="#">Contacto</a>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </footer>
+    <script>
+      function openNav() {
+          document.getElementById("sideNavigation").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+      }
+      function closeNav() {
+          document.getElementById("sideNavigation").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+  </body>
+</html>
