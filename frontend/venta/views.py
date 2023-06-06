@@ -3,8 +3,8 @@ from django.template import loader
 from django.http import HttpResponse
 
 def home(request):
-    return render(request, 'home.html')
-
+    template = loader.get_template('home.html')
+    return HttpResponse(template.render())
 
 def portal(request):
     template = loader.get_template('portal.html')
@@ -30,8 +30,8 @@ def contacto(request):
     template = loader.get_template('contacto.html')
     return HttpResponse(template.render())
 
-def menu(request):
-    template = loader.get_template('menu.html')
+def productos(request):
+    template = loader.get_template('productos.html')
     return HttpResponse(template.render())
 
 

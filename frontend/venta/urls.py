@@ -3,13 +3,12 @@ from .views import home
 from . import views
 
 urlpatterns = [
-    path('', home, name="home"),
+    path('', views.home, name="home"),
     path('portal', views.portal, name="portal"),
     path('tabla', views.tabla, name="tabla"),
-    path('agregar', views.agregar, name="agregar"),
     path('base', views.base, name="base"),
     path('contacto', views.contacto, name="contacto"),
-    path('menu', views.menu, name="menu"),
+    path('productos', views.productos, name="productos"),
     path('carrito', views.carrito, name="carrito"),
 
 ]

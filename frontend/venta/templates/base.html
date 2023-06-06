@@ -13,51 +13,45 @@
 
   <body >
     <header>
-
-      <!-- segundo menu -->
-      <nav class="navbar navbar-expand navbar-light bg-light" >
-          <div class="nav navbar-nav ">
-              <div id="sideNavigation" class="sidenav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a href="#">About</a>
-              <a href="#">Features</a>
-              <a href="#">Contact Us</a>
-              </div>
-              <nav class="topnav">
-                <a href="#" onclick="openNav()">
-                  <svg width="25" height="25" id="icoOpen">
-                      <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
-                      <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
-                      <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
-                  </svg>
-                </a>
-              </nav>
-              <br>
-            <a class="nav-item nav-link" href="{% url 'home' %}">Home</a>
-            <a class="nav-item nav-link" href="{% url 'menu' %}">Menú</a>
-            <a class="nav-item nav-link" href="{% url 'agregar' %}">Ingresar trabajador</a>
-            <a class="nav-item nav-link" href="{% url 'tabla' %}">Nomina trabajadores</a>
-            <a class="nav-item nav-link" href="{% url 'contacto' %}">Contacto</a>
-            <a class="nav-item nav-link" href="{% url 'carrito' %}">Carrito</a>
-            <a class="nav-item nav-link" href="#">Nosotros</a> 
+      <nav>
+        <div class="containers">
+          <a href="http://localhost:9010">
+            <img id="img1" src="{% static 'img/tech2.png' %}" alt="logo-principal">
+          </a>
+          <p>¡APROVECHA: envios gratis <br> por compras sobre: $29.990!</p>
+          <form action="https://www.google.com/search" method="get" class="search-bar">
+            <input type="text" placeholder="Buscador de productos ...            " name="q">
+            <button type="submit"><img src="{% static 'img/search.png' %}" alt=""></button>
+          </form>
+        </div>
+        <nav class="navegacion">
+          <a href="" class="x"><img src="" alt=""></a>
+          <div class="interior">
+            <ul>
+              <li><a href="{% url 'home' %}">Inicio</a></li>
+              <li><a href="{% url 'productos' %}">Productos</a></li>
+              <li><a href="{% url 'tabla' %}">Tabla</a></li>
+              <li><a href="{% url 'contacto' %}">Contacto</a></li>
+              <li><a href="{% url 'carrito' %}">Carrito</a></li>
+            </ul>
           </div>
-      </nav> 
+        </nav>
+
+      </nav>
+
     </header>
     
     <div id="principal">
-      <br>
       {% block contenido %}  
       
       {% endblock %}
     </div>
-
-      <p class="mt-5 mb-3 text-muted" align="center"> Todos los derechos reservados 2023 ©</p>
-    <footer class="footer py-3 bg-light">
+    <footer class="footer">
       <div class="footer container-fluid">
         <div class="row p-4 bg-dark text-white">
           <div class="col-xs-12 col-md-6 col-lg-3">
             <figure class="wpb_wrapper vc_figure">
-              <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="250" height="31" src="https://pcmaniapr.yolasite.com/resources/logo%20solo.jpg.opt860x270o0%2C0s860x270.jpg" class="vc_single_image-img attachment-full" alt="" loading="lazy"></div>
+              <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="250" height="60" src="{% static 'img/tech1.png' %}" class="vc_single_image-img attachment-full" alt="" loading="lazy"></div>
             </figure>
             <div class="address">
               <ul>
@@ -68,7 +62,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 col-lg-3">
-            <p class="h5 mb-3" style="color: red;">Productos</p>
+            <p class="h5 mb-3" style="color: red; font-weight: bold;">Productos</p>
             <div class="mb-2">  
               <a class="text-white text-decoration-none" href="#">Top ventas</a>
             </div>
@@ -80,7 +74,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 col-lg-3">
-            <p class="h5 mb-3" style="color: red;">Cuenta</p>
+            <p class="h5 mb-3" style="color: red; font-weight: bold;">Cuenta</p>
             <div class="mb-2">  
               <a class="text-white text-decoration-none" href="#">Mi cuenta</a>
             </div>
@@ -92,7 +86,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 col-lg-3">
-            <p class="h5 mb-3" style="color: red;">Más información</p>
+            <p class="h5 mb-3" style="color: red; font-weight: bold;">Más información</p>
             <div class="mb-2">  
               <a class="text-white text-decoration-none" href="#">Nosotros</a>
             </div>
@@ -103,15 +97,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      function openNav() {
-          document.getElementById("sideNavigation").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-      }
-      function closeNav() {
-          document.getElementById("sideNavigation").style.width = "0";
-          document.getElementById("main").style.marginLeft = "0";
-      }
-    </script>
   </body>
 </html>

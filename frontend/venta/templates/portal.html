@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% block contenido %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +15,8 @@ h1{text-align: center;color: darkblue;font-size:100px;}
 form{text-align: center;}
 label{font-size:larger;}
 </style>    
-
+{% block contenido %}
 <body class="text-center">
-
-    
     <form class="form-signin">
         <div align="center">
             <img class="mb-4" src="https://www.solotodo.cl/logo_fondo_oscuro.svg">
@@ -43,30 +40,5 @@ label{font-size:larger;}
     
 
 </body>
-</html>
 {% endblock %}
-
-
-
-
-<!--  
-
-<body bgcolor="#FAEBD7">
-    <h1>Portal Trabajadores</h1>
-    <form action="/action_page.php">
-        <label for="correo">Ingrese su correo</label><br>
-        <input type="email" id="correo" name="correo" required><br><br>
-        <label for="lname">Contraseña</label><br>
-        <input type="password" id="contrasenna" name="contrasenna" required><br><br>
-        <button type="submit" formaction="/ventas/tabla">Aceptar</button>
-        <button type="reset" value="Reset">Limpiar</button><br>
-        <button type="submit" formaction="/ventas/agregar">Agregar nuevo trabajador</button>
-      </form>
-      
-      
-
-    
-</form>
-</body>
-
--->
+</html>

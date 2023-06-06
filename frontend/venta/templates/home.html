@@ -1,23 +1,16 @@
 {% extends "base.html" %}
-{% block contenido %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<style>
-  body { 
-      background-image: url('https://st3.depositphotos.com/1800192/31869/i/600/depositphotos_318696648-stock-photo-gray-abstract-background-for-designers.jpg');
-  }   
-</style> 
-
-
 <body>
-
+{% block contenido %}
 <!-- Carrusel -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -70,7 +63,7 @@
       role="tabpanel"
       aria-labelledby="pills-home-tab"
     >
-      1
+    1
     </div>
     <div
       class="tab-pane fade show active container"
@@ -85,7 +78,7 @@
           <!-- Tarjeta para imagen -->
           <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray;"> <!-- color cuadrado imagen-->
             <h5 class="card-title pt-2 text-center text-white">Redragon </h5>
-            <img src="//media.spdigital.cl/thumbnails/products/c7uk0qcs_d57502a4_thumbnail_512.jpg" class="card-img-top" alt="..." style="width:304px; height:300px">
+            <img src="//media.spdigital.cl/thumbnails/products/c7uk0qcs_d57502a4_thumbnail_512.jpg" class="card-img-top" alt="..." style="width:260px; height:300px">
             <div class="card-body">
               <p class="card-text text-white-50 description">Teclado Mecánico Gamer Redragon Kumara K552, Switch Outemu Red, Retroiluminación Rainbow Fija</p>
               <h5 class="text-white">Ahora: $ 24.990</h5>
@@ -99,7 +92,7 @@
         <div class="col d-flex justify-content-center mb-4">
           <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray;"> <!-- color cuadrado imagen-->
             <h5 class="card-title pt-2 text-center text-white"> Brother</h5>
-            <img src="//media.spdigital.cl/thumbnails/products/z1ojhnci_50816852_thumbnail_512.jpg"  class="card-img-top" alt="..." style="width:304px; height:300px">
+            <img src="//media.spdigital.cl/thumbnails/products/z1ojhnci_50816852_thumbnail_512.jpg"  class="card-img-top" alt="..." style="width:260px; height:300px">
             <div class="card-body">
               <p class="card-text text-white-50 description">Impresora Láser Brother HL-L6400DW</p><br><BR>
               <h5 class="text-white">Ahora: <span class="precio">$ 389.990</span></h5>
@@ -113,7 +106,7 @@
         <div class="col d-flex justify-content-center mb-4">
           <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray ;"> <!-- color cuadrado imagen-->
             <h5 class="card-title pt-2 text-center text-white"> Vertagear</h5>
-            <img src="//media.spdigital.cl/thumbnails/products/2ygukfs2_77c72e2e_thumbnail_512.jpg"class="card-img-top" alt="..." style="width:304px; height:300px">
+            <img src="//media.spdigital.cl/thumbnails/products/2ygukfs2_77c72e2e_thumbnail_512.jpg"class="card-img-top" alt="..." style="width:260px; height:300px">
             <div class="card-body">
               <p class="card-text text-white-50 description">Silla Gamer Profesional VERTAGEAR Racing Series PL6000 Gaming Chair Black Carbon</p>
               <h5 class="text-white">Ahora: $ 175.000</h5>
@@ -127,7 +120,7 @@
         <div class="col d-flex justify-content-center mb-4">
           <div class="card shadow mb-1" style="width: 20rem; background-color: SlateGray ;"> <!-- color cuadrado imagen-->
             <h5 class="card-title pt-2 text-center text-white"> Sony </h5>
-            <img src="//media.spdigital.cl/thumbnails/products/gwgu3_j0_f3bae278_thumbnail_512.png" class="card-img-top" alt="..." style="width:304px; height:300px">
+            <img src="//media.spdigital.cl/thumbnails/products/gwgu3_j0_f3bae278_thumbnail_512.png" class="card-img-top" alt="..." style="width:260px; height:300px">
             <div class="card-body">
               <p class="card-text text-white-50 description">Consola Sony PlayStation 5, 825GB, Edición Standard, Incluye Fifa 23.</p><br>
               <h5 class="text-white">Ahora: $ 619.990</h5>
@@ -140,6 +133,6 @@
       </div>
     </div>
   </div>
+{% endblock %}
 </body>
 </html>
-{% endblock %}
